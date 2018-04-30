@@ -8,4 +8,4 @@ This route is simply to see if the Heroku build is working. It should return a j
 ## PUSH /lookup
 Parameter `word`: a vector of any length containing the words you want to lookup.
 
-Example json-body: {"word":["hallå", "världen"]}
+Example json-body: `{"word":["hallå", "världen"]}`
