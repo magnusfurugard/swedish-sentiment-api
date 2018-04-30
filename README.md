@@ -37,4 +37,7 @@ To be used for local testing.
 Entrypoint-file for Docker. Runs the API with Heroku-provided portnumber, or `port=8000` if running locally.
 
 ### api/sentimentlex.csv
-Raw data file.
+Raw data file for `dictionary=spraakbanken`.
+
+### api/afinn165.json
+Raw data file for `dictionary=afinn165`.
