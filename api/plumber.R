@@ -1,14 +1,12 @@
 ## api/plumber.R
 
 # Libs
-# library(tidyverse)
 library(SnowballC)
 library(tictoc)
 library(tidyverse)
 
 # Global objects. These are accessible in the API.
 dataset = read_csv("sentimentlex.csv")
-
 swedish_sentiments = dataset %>% 
   mutate(stemmed_word = SnowballC::wordStem(.$word, language = "swedish")) %>% 
   rename(matched_word = word)
