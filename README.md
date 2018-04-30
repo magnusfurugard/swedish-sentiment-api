@@ -5,8 +5,8 @@ Hosted on a free instance on Heroku: [https://swedish-sentiment-api.herokuapp.co
 
 ## Routes
 
-### Swagger /__swagger__/
-All routes below are available in the Swagger-docs.
+### Swagger /\_\_swagger\_\_/
+All routes below are available in the [Swagger](https://swedish-sentiment-api.herokuapp.com/__swagger__/)-docs.
 
 ### GET /
 This route is simply to see if the Heroku build is working. It should return a json-body with `status=OK`.
