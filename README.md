@@ -3,6 +3,8 @@ An open source sentiment lookup API for Swedish words. Built in R with `tidyvers
 
 Hosted on a free instance on Heroku: `https://swedish-sentiment-api.herokuapp.com`. Since it's in the free tier, if left unused the initial call will take an additional 15-20 seconds (to start up the app).
 
+*NOTE:* The source data is not awesome. If you find a better one for Swedish sentiments, report as an issue or make a pull request.
+
 ## Routes
 ### GET /
 This route is simply to see if the Heroku build is working. It should return a json-body with `status=OK`.
