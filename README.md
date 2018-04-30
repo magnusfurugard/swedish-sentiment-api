@@ -4,6 +4,10 @@ An open source sentiment lookup API for Swedish words. Built in R with `tidyvers
 Hosted on a free instance on Heroku: [https://swedish-sentiment-api.herokuapp.com](https://swedish-sentiment-api.herokuapp.com). Since it's in the free tier, if left unused the initial call will take an additional 15-20 seconds (to start up the app).
 
 ## Routes
+
+### Swagger
+All routes below are available in the [https://swedish-sentiment-api.herokuapp.com/__swagger__/](Swagger) docs.
+
 ### GET /
 This route is simply to see if the Heroku build is working. It should return a json-body with `status=OK`.
 

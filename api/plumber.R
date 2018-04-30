@@ -1,4 +1,5 @@
-## api/plumber.R
+#* @apiTitle swedish-sentiment-api
+#* @apiDescription https://github.com/magnusfurugard/swedish-sentiment-api
 
 # Libs
 library(SnowballC)
@@ -17,6 +18,7 @@ spraakbanken = read_csv("sentimentlex.csv")
 
 #' Lookup route.
 #' @post /lookup
+#' @param dictionary A string. Either `afinn165` or `spraakbanken`.
 #' @param word A vector of words to get sentiments for.
 function(req, word, dictionary) {
   # Log input.
@@ -67,6 +69,7 @@ function() {
 
 #' Raw data dump route.
 #' @post /data
+#' @param dictionary A string. Either `afinn165` or `spraakbanken`.
 function(req, dictionary) {
   if(dictionary == "afinn165") {
     list(
