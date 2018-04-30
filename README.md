@@ -3,18 +3,20 @@ An open source sentiment lookup API for Swedish words. Built in R with `tidyvers
 
 Hosted on a free instance on Heroku: [https://swedish-sentiment-api.herokuapp.com](https://swedish-sentiment-api.herokuapp.com). Since it's in the free tier, if left unused the initial call will take an additional 15-20 seconds (to start up the app).
 
-*NOTE:* The source data is not awesome. If you find a better one for Swedish sentiments, report as an issue or make a pull request.
-
 ## Routes
 ### GET /
 This route is simply to see if the Heroku build is working. It should return a json-body with `status=OK`.
 
 ### POST /lookup
+Requires parameter `dictionary`: Accepted values are either `afinn165` or `spraakbanken`.
+
 Requires parameter `word`: a vector of any length containing the words you need sentiments for.
 
-Example json-body: `{"word":["hallå", "världen"]}`
+Example json-body: `{"word":["hallå", "världen"], "dictionary":"afinn165"}`
 
-### GET /data
+### POST /data
+Requires parameter `dictionary`: Accepted values are either `afinn165` or `spraakbanken`.
+
 A raw dump of all the underlying data for the API, including data source.
 
 ## Files
