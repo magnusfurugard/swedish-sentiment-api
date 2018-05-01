@@ -71,12 +71,12 @@ function() {
 #' @post /data
 #' @param dictionary A string. Either `afinn165` or `spraakbanken`.
 function(req, dictionary) {
-  if(dictionary == "afinn165") {
+  if(dictionary == "spraakbanken") {
     list(
       sentiment_source = "https://spraakbanken.gu.se/swe/resurs/sentimentlex", 
       data = spraakbanken
     )
-  } else if(dictionary == "spraakbanken") {
+  } else if(dictionary == "afinn165") {
     list(
       sentiment_source = "https://github.com/AlexGustafsson/sentiment-swedish", 
       data = afinn165
